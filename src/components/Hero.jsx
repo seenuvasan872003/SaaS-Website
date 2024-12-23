@@ -1,7 +1,9 @@
 import 'react';
 import "../style/hero.css"
 import "../style/herologoticker.css"
-import Image1 from '../assets/Visual.svg'; 
+import Image1 from '../assets/herologos/Visual.svg'; 
+import Image2 from '../assets/herologos/visual1.png'; 
+import Image3 from '../assets/herologos/visual2.png'; 
 import one from '../assets/herologos/one.png'
 import two from '../assets/herologos/two.png'
 import three from '../assets/herologos/three.png'
@@ -29,8 +31,10 @@ const Hero = () => {
               <button className="text-gray-600 px-6 py-3 rounded-lg border border-gray-300">Learn more <GoArrowRight className='inline' /></button>
             </div>
           </div>
-          <div className="sm:w-1/2 items-center">
+          <div className="sm:w-1/2 items-center relative">
+            <img src={Image2} alt=" image2" className='hidden sm:inline sm:absolute Sm:-left-10 sm:-top-10 lg:-left-28 lg:-top-10 w-1/3' />
             <img src={Image1} alt="image 1" />
+            <img src={Image3} alt="image3"  className=' hidden lg:inline  lg:absolute -bottom-48 right-0'/>
           </div>
         </div>
       </section>
