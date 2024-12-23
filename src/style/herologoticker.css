@@ -1,0 +1,30 @@
+.logo-ticker {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff; /* Adjust based on your design */
+    padding: 10px 0;
+    gap: 20px;
+   
+  }
+  
+  .logo-item {
+    font-size: 18px;
+    font-weight: 400;
+    color: #c0c0c0;
+    opacity: 0.5;
+    text-align: center;
+    transition: opacity 0.3s ease, color 0.3s ease;
+  }
+  
+  .logo-item.highlight {
+    color: #000;
+    font-weight: 600;
+    opacity: 1;
+  }
+  
+  .logo-item.faded:hover {
+    opacity: 0.8;
+    color: #555;
+  }
+  
